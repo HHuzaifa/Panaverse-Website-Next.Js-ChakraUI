@@ -1,4 +1,10 @@
-import './globals.css'
+"use client"
+import Footer from "@/components/footer"
+import FrontSection from "@/components/hero"
+import Navbar from "@/components/navbar"
+import { ChakraProvider } from "@chakra-ui/react"
+import * as React from "react"
+import Home from "./page"
 
 export default function RootLayout({
   children,
@@ -7,12 +13,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body>
+        <ChakraProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ChakraProvider>
+        </body>
     </html>
   )
 }
