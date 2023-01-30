@@ -62,17 +62,21 @@ export default function FrontSection() {
             direction={{ base: "column", sm: "row" }}
           >
             <Button
+              as="a"
+              href="https://www.piaic.org/"
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
               px={6}
-              colorScheme={"red"}
-              bg={"red.400"}
-              _hover={{ bg: "red.500" }}
+              colorScheme={"blue"}
+              bg={"blue.400"}
+              _hover={{ bg: "blue.700" }}
             >
-              Get started
+              Get Enrolled
             </Button>
             <Button
+              as="a"
+              href="https://www.facebook.com/piaic/videos/662432515628148"
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
@@ -107,26 +111,23 @@ export default function FrontSection() {
             width={"full"}
             overflow={"hidden"}
           >
-            <IconButton
-              aria-label={"Play Button"}
+            {/* <IconButton
+              // aria-label={"Play Button"}
               variant={"ghost"}
               _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
+              // icon={<PlayIcon w={12} h={12} />}
               size={"lg"}
               color={"white"}
               position={"absolute"}
               left={"50%"}
               top={"50%"}
               transform={"translateX(-50%) translateY(-50%)"}
-            />
-            <Image
+            /> */}
+            <img
               alt={"Hero Image"}
-              fit={"cover"}
-              align={"center"}
-              w={"100%"}
-              h={"100%"}
+              
               src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                "https://www.cnet.com/a/img/resize/2715aac9e2099982b092dc16e77b25fe0d5a4734/hub/2022/01/18/141595b6-ec1b-4aab-a70f-d2882821e885/gettyimages-1348369701.jpg?auto=webp&fit=crop&height=675&width=1200"
               }
             />
           </Box>
